@@ -61,6 +61,11 @@ public static class ExtensionMethods
     {
         return obj.GetComponent(typeof(T)) != null;
     }
+
+    public static Vector3 GetDirectionTo(this Vector3 from, Vector3 lookAt)
+    {
+        return lookAt - from;
+    }
 }
 
 

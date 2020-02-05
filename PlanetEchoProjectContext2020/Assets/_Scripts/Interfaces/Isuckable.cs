@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace Ruben
 {
-    public class CameraRay : MonoBehaviour
+    public interface Isuckable
     {
-
+        void GetSuckedTo(Vector3 pos, float suckStrength);
     }
 }
