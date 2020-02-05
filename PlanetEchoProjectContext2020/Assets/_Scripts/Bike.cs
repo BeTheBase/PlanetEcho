@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class Bike : MonoBehaviour
 {
-    public Transform EndPosition;
+    public List<Transform> Planets;
 
     public float Speed = 10f;
 
     public Transform startPosition;
-    public Vector3 EndVector;
 
     private float timer = 0;
+    private int planetIndex = 0;
 
     private void Start()
     {
         startPosition = this.transform;
+        EventManager<int>.AddHandler(EVENT.loadGame, GetPlanetIndex);
     }
 
-    private void Update()
+    public void GetPlanetIndex(int index)
     {
-        timer += Time.deltaTime;
-        transform.position = Vector3.Lerp(startPosition.position, EndPosition.position, Mathf.PingPong(timer * Speed, 1.0f));
+        planetIndex = index-1;
+        MoveBike();
+    }
+
+    private void MoveBike()
+    {
+        transform.LerpTransform(this, Planets[planetIndex].position, Speed);
     }
 }

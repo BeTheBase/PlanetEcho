@@ -23,6 +23,7 @@ namespace Bas
             // ...change the instruction text to read "Loading..."
             loadingText.text = "Loading...";
 
+            EventManager<int>.BroadCast(EVENT.loadGame, index);
             // ...and start a coroutine that will load the desired scene.
             StartCoroutine(LoadNewScene(index));
 
