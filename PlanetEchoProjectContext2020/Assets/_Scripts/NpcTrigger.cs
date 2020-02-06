@@ -22,16 +22,22 @@ namespace Bas
         }
         public void TriggerDialogue()
         {
-            //DialogueManager.Instance.GetDialogueLineBySeqeuenceID(DialogueSequenceID, DialogueLineNames[0]);
-            StartCoroutine(PlaySequences(DialogueLineNames[dialogueIndex]));
+            DialogueManager.Instance.GetDialogueLineBySeqeuenceID(DialogueSequenceID, DialogueLineNames[0]);
+
+            if (DialogueLineNames.Count > 1)
+            {
+                StartCoroutine(PlaySequences(DialogueLineNames[1]));
+            }
         }
 
         private IEnumerator PlaySequences(string name)
         {
             dialogueIndex += 1;
-            DialogueManager.Instance.GetDialogueLineBySeqeuenceID(DialogueSequenceID, name);
+
             yield return new WaitForSeconds(DialogueLineWaitTime);
-            if(dialogueIndex > DialogueLineNames.Count)
+            DialogueManager.Instance.GetDialogueLineBySeqeuenceID(DialogueSequenceID, name);
+
+            if (dialogueIndex > DialogueLineNames.Count)
             {
                 //DialogueLineWaitTime = 0;
             }

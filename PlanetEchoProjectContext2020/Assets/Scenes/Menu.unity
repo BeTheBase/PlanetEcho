@@ -1193,116 +1193,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
---- !u!1 &1657421004
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1657421006}
-  - component: {fileID: 1657421005}
-  - component: {fileID: 1657421007}
-  - component: {fileID: 1657421008}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1657421005
+--- !u!114 &1657421007 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8581884572908896174, guid: 272388aaa27da14488c804d771399ec0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8581884572334654305}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657421004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1af575cd5b9522242b11b51d2a87c10a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1657421006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657421004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1657421007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657421004}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e0566d2e07c0e0c438dcc5e0322a38a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 302795159}
-  loadingTime: 3
-  loadScene: 0
-  loadingText: {fileID: 1247200517}
---- !u!114 &1657421008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657421004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2750649650b87f74787d56031d7d735c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DialogueLineTextField: {fileID: 1049523349}
-  DialogueWrappers:
-  - name: Lumiblubs
-    Dialogues:
-    - name: Plankton1
-      DialogueText: "Welcome\u2026 To our planet\u2026 We are XXX\u2026 We use sunlight\u2026
-        And eat toxiblubs from the air\u2026 So make ourselves glow."
-      DialogueAudio: {fileID: 0}
-    - name: Plankton2
-      DialogueText: "You see\u2026 The volcano\u2026 Shoots the toxiblubs... Into
-        the air\u2026 And we consume it. "
-      DialogueAudio: {fileID: 0}
-    - name: Plankton3
-      DialogueText: "When there are\u2026 Too many toxiblubs\u2026 Stay in the air\u2026
-        It warms the air up\u2026 So we... Prevent the air\u2026 From warming up. "
-      DialogueAudio: {fileID: 0}
-    - name: Plankton4
-      DialogueText: "You see\u2026 Our scary neighbors\u2026 The lilies\u2026 They
-        like the warmth\u2026 And we stop them\u2026 From growing\u2026 Because without
-        the toxiblubs\u2026 In the air\u2026 They cannot grow bigger."
-      DialogueAudio: {fileID: 0}
-    DialogueSequenceID: 0
-  - name: Planet Echo Dialogues
-    Dialogues:
-    - name: 
-      DialogueText: Hey hey
-      DialogueAudio: {fileID: 0}
-    DialogueSequenceID: 0
-  - name: Planet Aplha Dialogues
-    Dialogues:
-    - name: 
-      DialogueText: Ewea
-      DialogueAudio: {fileID: 0}
-    - name: 
-      DialogueText: Sisi
-      DialogueAudio: {fileID: 0}
-    DialogueSequenceID: 0
 --- !u!1 &1695103596
 GameObject:
   m_ObjectHideFlags: 0
@@ -2176,3 +2078,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92a4d6b1fcdc0e40bd443670bbefae3, type: 3}
+--- !u!1001 &8581884572334654305
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8581884572908896173, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896174, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: bike
+      value: 
+      objectReference: {fileID: 302795159}
+    - target: {fileID: 8581884572908896174, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: loadingText
+      value: 
+      objectReference: {fileID: 1247200517}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896175, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581884572908896177, guid: 272388aaa27da14488c804d771399ec0,
+        type: 3}
+      propertyPath: DialogueLineTextField
+      value: 
+      objectReference: {fileID: 1049523349}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 272388aaa27da14488c804d771399ec0, type: 3}

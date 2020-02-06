@@ -5,7 +5,7 @@
             "Dialogues": [
                 {
                     "name": "Plankton1",
-                    "DialogueText": "Welcome… To our planet… We are XXX… We use sunlight… And eat toxiblubs from the air… So make ourselves glow.",
+                    "DialogueText": "Welcome… To our planet… We are the Lumiblubs… We use sunlight… And eat toxiblubs from the air… So make ourselves glow.",
                     "DialogueAudio": {
                         "instanceID": 0
                     }

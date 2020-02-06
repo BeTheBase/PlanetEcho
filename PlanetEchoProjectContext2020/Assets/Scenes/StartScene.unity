@@ -665,7 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IntroText: {fileID: 338502656}
   Destination: {fileID: 844769117}
-  ScrollSpeed: 70
+  ScrollSpeed: 90
   LoadTime: 30
 --- !u!4 &1058858917
 Transform:
