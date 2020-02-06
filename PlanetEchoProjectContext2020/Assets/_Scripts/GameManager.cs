@@ -8,6 +8,9 @@ namespace Bas
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField]
+        public GameObject Bike;
+
         public float LoadingTime = 3f;
 
         private bool loadScene = false;
@@ -15,14 +18,21 @@ namespace Bas
         [SerializeField]
         private Text loadingText;
 
+        private void Start()
+        {
+            
+        }
+
         public void GoToLevel(int index)
         {
+            Bike.SetActive(true);
             // ...set the loadScene boolean to true to prevent loading a new scene more than once...
             loadScene = true;
 
             // ...change the instruction text to read "Loading..."
             loadingText.text = "Loading...";
 
+            EventManager<int>.BroadCast(EVENT.loadGame, index);
             // ...and start a coroutine that will load the desired scene.
             StartCoroutine(LoadNewScene(index));
 
