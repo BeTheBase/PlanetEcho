@@ -20,7 +20,7 @@ namespace Bas
 
         private void Start()
         {
-            
+            DialogueManager.Instance.GetDialogueLineBySeqeuenceID(0, "Test");
         }
 
         public void GoToLevel(int index)

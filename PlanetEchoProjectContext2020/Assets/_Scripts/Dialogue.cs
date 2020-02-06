@@ -9,6 +9,6 @@ namespace Bas
     {
         public string name;
         public string DialogueText;
-       
+        public AudioClip DialogueAudio;
     }
 }
