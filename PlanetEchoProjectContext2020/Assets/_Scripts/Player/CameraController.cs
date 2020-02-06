@@ -16,10 +16,14 @@ namespace Ruben
         public float xSensitivity = 15f;
         public float ySensitivity = 15f;
 
-        public float maxYRot = 60f;
         public float minYRot = -60f;
+        public float maxYRot = 60f;
+
+        public float minXRot = 0;
+        public float maxXRot = 360;
 
         private float yRotation = 0f;
+        private float xRotation = 0f;
 
         [SerializeField] private Transform cameraTransform;
         [SerializeField] private Rigidbody rb;
