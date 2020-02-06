@@ -9,5 +9,6 @@ namespace Bas
     {
         public string name;
         public List<Dialogue> Dialogues;
+        public int DialogueSequenceID;
     }
 }

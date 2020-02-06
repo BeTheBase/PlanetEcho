@@ -1,0 +1,34 @@
+{
+    "Items": [
+        {
+            "name": "Planet Beta Dialogues",
+            "Dialogues": [
+                {
+                    "DialogueText": "sfwefw"
+                },
+                {
+                    "DialogueText": "nop nop"
+                }
+            ]
+        },
+        {
+            "name": "Planet Echo Dialogues",
+            "Dialogues": [
+                {
+                    "DialogueText": "Hey hey"
+                }
+            ]
+        },
+        {
+            "name": "Planet Aplha Dialogues",
+            "Dialogues": [
+                {
+                    "DialogueText": "Ewea"
+                },
+                {
+                    "DialogueText": "Sisi"
+                }
+            ]
+        }
+    ]
+}

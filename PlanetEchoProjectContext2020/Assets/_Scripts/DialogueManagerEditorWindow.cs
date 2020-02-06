@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class DialogueManagerEditorWindow : EditorWindow
+namespace Bas
 {
-    private SerializedObject serializedObject;
-
-    [MenuItem("Window/My Window")]
-    public static void ShowWindow()
+    [CustomEditor(typeof(DialogueManager))]
+    public class DialogueManagerEditorWindow : Editor
     {
-        EditorWindow.GetWindow(typeof(DialogueManagerEditorWindow));
-    }
-
-    private void OnGUI()
-    {
-        if (GUILayout.Button("Save Json"))
+        private DialogueManager dialogueManager;
+        
+        public override void OnInspectorGUI()
         {
+            base.OnInspectorGUI();
+            dialogueManager = (DialogueManager)target;
 
+            if (GUILayout.Button("Save Dialogues"))
+            {
+                dialogueManager.SaveDialogues();
+            }
+
+            if(GUILayout.Button("Load Dialogues"))
+            {
+                dialogueManager.LoadDialogues();
+            }
         }
     }
 }
