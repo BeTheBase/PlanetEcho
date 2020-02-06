@@ -6,8 +6,11 @@ namespace Ruben
 {
     public class SuckMachine : MonoBehaviour
     {
+        public LayerMask layerMask;
         public float suckStrength;
+        public float distStrength;
         public Transform shootingPoint;
+        public int deletedNum = 0;
 
         private InputManager input;
 
@@ -27,14 +30,14 @@ namespace Ruben
 
         private void Sucking()
         {
-            RaycastHit[] results = Physics.BoxCastAll(shootingPoint.position + shootingPoint.forward * 3, new Vector3(1, 1, 3), shootingPoint.forward, shootingPoint.rotation);
+            RaycastHit[] results = Physics.BoxCastAll(shootingPoint.position + shootingPoint.forward * 3, new Vector3(1, 1, 3), shootingPoint.forward, shootingPoint.rotation, 10f, layerMask, QueryTriggerInteraction.Collide);
 
             for (int i = 0; i < results.Length; i++)
             {
                 if (results[i].transform.gameObject.HasComponent<Isuckable>())
                 {
                     results[i].transform.GetComponent<Isuckable>().GetSuckedTo(shootingPoint.position, 
-                        suckStrength / ((Vector3.Distance(shootingPoint.position, results[i].transform.position) * 2) + 1));
+                        suckStrength / ((Vector3.Distance(shootingPoint.position, results[i].transform.position) * distStrength)));
                 }
             }
 

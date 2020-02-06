@@ -59,7 +59,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3963879414323410699}
-  m_LocalRotation: {x: -0.14878842, y: -0, z: -0, w: 0.9888691}
+  m_LocalRotation: {x: -0.14878467, y: 0, z: 0, w: 0.9888696}
   m_LocalPosition: {x: 0.305, y: -0.5347, z: 0.6556}
   m_LocalScale: {x: 0.29256, y: 0.30230996, z: 0.86291945}
   m_Children:
@@ -155,8 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60add761dd325a44ebf8028536831b7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  suckStrength: 8
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  suckStrength: 15
+  distStrength: 3
   shootingPoint: {fileID: 3963879413167457308}
+  deletedNum: 0
 --- !u!1 &3963879414728874641
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,7 +4871,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e75ef80a807d61f49b6ae6c283424c11, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
