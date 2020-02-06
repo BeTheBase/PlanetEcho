@@ -120,6 +120,8 @@ GameObject:
   m_Component:
   - component: {fileID: 144373632283781594}
   - component: {fileID: 5150534415815346793}
+  - component: {fileID: 1065149020}
+  - component: {fileID: 1065149021}
   m_Layer: 0
   m_Name: lumiblubAnimatieMies
   m_TagString: Untagged
@@ -134,7 +136,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3772805742170725321}
-  m_LocalRotation: {x: -0, y: -0.99907684, z: -0, w: -0.042960394}
+  m_LocalRotation: {x: -0, y: -0.99907696, z: 0, w: -0.042956777}
   m_LocalPosition: {x: 0.91345054, y: -1.4794872, z: 2.1949792}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
@@ -166,6 +168,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &1065149020
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772805742170725321}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Center: {x: 0, y: 0.1, z: 0}
+--- !u!114 &1065149021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772805742170725321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095f2f5226a04994f84c9a8ab9ab2dd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueSequenceID: 0
+  DialogueLineNames:
+  - Plankton1
+  - Plankton2
+  - Plankton3
+  - Plankton4
+  PlayerFreezeTime: 10
+  DialogueLineWaitTime: 10
+  test: 1
 --- !u!1 &3846564902084928299
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,10 +27,10 @@ namespace Bas
         {
             DialogueWrapper dialogueWrapper = DialogueWrappers.Find(dw => dw.DialogueSequenceID.Equals(id));
             Dialogue dialogue = dialogueWrapper.Dialogues.Find(d => d.name.Equals(name));
-            if(dialogue.DialogueAudio != null)
-            {
+            //if(dialogue.DialogueAudio != null)
+            //{
                 //Play audio clip!
-            }
+            //}
             StartCoroutine(AnimateText(0.1f, dialogue.DialogueText));
         }
 
