@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1e54afe1b4ab6644bf09be42045870e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPrefabs: 20
+  spawnTimer: 4
+  totalSpawned: 0
+  initialPrefabs: 20
+  maxPrefabs: 40
   prefab: {fileID: 1907969575445408081, guid: 2fa5d79d5b19ef64da5a7abf204efd54, type: 3}
 --- !u!65 &6524954199591473993
 BoxCollider:
