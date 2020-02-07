@@ -9,23 +9,20 @@ namespace Bas
     public class GameManager : MonoBehaviour
     {
         [SerializeField]
-        public GameObject Bike;
+        private GameObject bike;
 
-        public float LoadingTime = 3f;
+        [SerializeField]
+        private float loadingTime = 3f;
 
+        [SerializeField]
         private bool loadScene = false;
 
         [SerializeField]
         private Text loadingText;
 
-        private void Start()
-        {
-            
-        }
-
         public void GoToLevel(int index)
         {
-            Bike.SetActive(true);
+            bike.SetActive(true);
             // ...set the loadScene boolean to true to prevent loading a new scene more than once...
             loadScene = true;
 
@@ -35,7 +32,6 @@ namespace Bas
             EventManager<int>.BroadCast(EVENT.loadGame, index);
             // ...and start a coroutine that will load the desired scene.
             StartCoroutine(LoadNewScene(index));
-
         }
 
         private void Update()
@@ -56,7 +52,7 @@ namespace Bas
 
             // This line waits for 3 seconds before executing the next line in the coroutine.
             // This line is only necessary for this demo. The scenes are so simple that they load too fast to read the "Loading..." text.
-            yield return new WaitForSeconds(LoadingTime);
+            yield return new WaitForSeconds(loadingTime);
 
             // Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
             AsyncOperation async = SceneManager.LoadSceneAsync(index);

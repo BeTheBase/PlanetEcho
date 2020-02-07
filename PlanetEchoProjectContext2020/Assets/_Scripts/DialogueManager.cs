@@ -19,30 +19,29 @@ namespace Bas
         }
 
         public void LoadDialogues()
-        {
-            
+        {           
             DialogueWrappers = JsonConverter<DialogueWrapper>.FromJson(jsonString, "/DialogueWrapperData.json");
         }
 
         public void GetDialogueLineBySeqeuenceID(int id, string name)
         {
             DialogueWrapper dialogueWrapper = DialogueWrappers.Find(dw => dw.DialogueSequenceID.Equals(id));
-            string dialogueLine = dialogueWrapper.Dialogues.Find(d => d.name.Equals(name)).DialogueText;
-            StartCoroutine(AnimateText(0.5f, dialogueLine));
+            Dialogue dialogue = dialogueWrapper.Dialogues.Find(d => d.name.Equals(name));
+            //if(dialogue.DialogueAudio != null)
+            //{
+                //Play audio clip!
+            //}
+            StartCoroutine(AnimateText(0.1f, dialogue.DialogueText));
         }
 
-        IEnumerator AnimateText(float animationTime = .5f, string str = "")
+        IEnumerator AnimateText(float delay, string input)
         {
-                float elapsed = 0;
-                string targetString = str;
-                string startingString = "";
-                while (elapsed < animationTime)
-                {
-                    elapsed += Time.deltaTime;
-                    float t = elapsed / animationTime;
-                str = targetString.Substring(0, Mathf.FloorToInt(targetString.Length * t)); // take the first n letters.
-                DialogueLineTextField.text = str;
-                yield return new WaitForEndOfFrame();
+            string currentText = "";
+            for(int index = 0; index < input.Length; index++)
+            {
+                currentText = input.Substring(0, index);
+                DialogueLineTextField.text = currentText;
+                yield return new WaitForSeconds(delay);
             }
         }
     }

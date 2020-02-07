@@ -1,34 +1,71 @@
 {
     "Items": [
         {
-            "name": "Planet Beta Dialogues",
+            "name": "Lumiblubs",
             "Dialogues": [
                 {
-                    "DialogueText": "sfwefw"
+                    "name": "Plankton1",
+                    "DialogueText": "Welcome… To our planet… We are the Lumiblubs… We use sunlight… And eat toxiblubs from the air… So make ourselves glow.",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
                 },
                 {
-                    "DialogueText": "nop nop"
+                    "name": "Plankton2",
+                    "DialogueText": "You see… The volcano… Shoots the toxiblubs... Into the air… And we consume it. ",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "name": "Plankton3",
+                    "DialogueText": "When there are… Too many toxiblubs… Stay in the air… It warms the air up… So we... Prevent the air… From warming up. ",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
+                },
+                {
+                    "name": "Plankton4",
+                    "DialogueText": "You see… Our scary neighbors… The lilies… They like the warmth… And we stop them… From growing… Because without the toxiblubs… In the air… They cannot grow bigger.",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
                 }
-            ]
+            ],
+            "DialogueSequenceID": 0
         },
         {
             "name": "Planet Echo Dialogues",
             "Dialogues": [
                 {
-                    "DialogueText": "Hey hey"
+                    "name": "",
+                    "DialogueText": "Hey hey",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
                 }
-            ]
+            ],
+            "DialogueSequenceID": 0
         },
         {
             "name": "Planet Aplha Dialogues",
             "Dialogues": [
                 {
-                    "DialogueText": "Ewea"
+                    "name": "",
+                    "DialogueText": "Ewea",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
                 },
                 {
-                    "DialogueText": "Sisi"
+                    "name": "",
+                    "DialogueText": "Sisi",
+                    "DialogueAudio": {
+                        "instanceID": 0
+                    }
                 }
-            ]
+            ],
+            "DialogueSequenceID": 0
         }
     ]
 }

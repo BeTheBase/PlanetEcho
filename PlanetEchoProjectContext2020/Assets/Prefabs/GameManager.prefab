@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8581884572908896173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8581884572908896175}
+  - component: {fileID: 8581884572908896172}
+  - component: {fileID: 8581884572908896174}
+  - component: {fileID: 8581884572908896177}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8581884572908896175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8581884572908896172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af575cd5b9522242b11b51d2a87c10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8581884572908896174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0566d2e07c0e0c438dcc5e0322a38a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bike: {fileID: 0}
+  loadingTime: 3
+  loadScene: 0
+  loadingText: {fileID: 0}
+--- !u!114 &8581884572908896177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2750649650b87f74787d56031d7d735c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueLineTextField: {fileID: 0}
+  DialogueWrappers:
+  - name: Lumiblubs
+    Dialogues:
+    - name: Plankton1
+      DialogueText: "Welcome\u2026 To our planet\u2026 We are XXX\u2026 We use sunlight\u2026
+        And eat toxiblubs from the air\u2026 So make ourselves glow."
+      DialogueAudio: {fileID: 0}
+    - name: Plankton2
+      DialogueText: "You see\u2026 The volcano\u2026 Shoots the toxiblubs... Into
+        the air\u2026 And we consume it. "
+      DialogueAudio: {fileID: 0}
+    - name: Plankton3
+      DialogueText: "When there are\u2026 Too many toxiblubs\u2026 Stay in the air\u2026
+        It warms the air up\u2026 So we... Prevent the air\u2026 From warming up. "
+      DialogueAudio: {fileID: 0}
+    - name: Plankton4
+      DialogueText: "You see\u2026 Our scary neighbors\u2026 The lilies\u2026 They
+        like the warmth\u2026 And we stop them\u2026 From growing\u2026 Because without
+        the toxiblubs\u2026 In the air\u2026 They cannot grow bigger."
+      DialogueAudio: {fileID: 0}
+    DialogueSequenceID: 0
+  - name: Planet Echo Dialogues
+    Dialogues:
+    - name: 
+      DialogueText: Hey hey
+      DialogueAudio: {fileID: 0}
+    DialogueSequenceID: 0
+  - name: Planet Aplha Dialogues
+    Dialogues:
+    - name: 
+      DialogueText: Ewea
+      DialogueAudio: {fileID: 0}
+    - name: 
+      DialogueText: Sisi
+      DialogueAudio: {fileID: 0}
+    DialogueSequenceID: 0
