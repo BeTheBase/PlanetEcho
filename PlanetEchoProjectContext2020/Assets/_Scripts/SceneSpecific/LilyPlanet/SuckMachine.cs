@@ -24,10 +24,11 @@ namespace Ruben
         private void Update()
         {
             shootingPoint.gameObject.SetActive(input.leftMouseButtonPressed);
-            animator.SetBool(animShootingBool, input.leftMouseButtonPressed);
+            //animator.SetBool(animShootingBool, input.leftMouseButtonPressed);
             if (input.leftMouseButtonPressed)
             {
                 Sucking();
+                AudioManager.Instance.Play("Zuig", shootingPoint.position);
             }
         }
 

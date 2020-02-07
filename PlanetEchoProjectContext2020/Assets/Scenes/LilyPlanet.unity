@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.47059116, g: 0.55961007, b: 0.66159105, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1831,6 +1831,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d9e6803fa2cd8f84cb285b31983c08d3, type: 3}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[0].name
+      value: Plop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cbfdb8340a1ac8d44948e960c8bcd078, type: 3}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Zuig
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[0].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[0].spatialBlend
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1957782355706252238, guid: fa3311ec443dced4799bbadcb4793639,
+        type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1957782355706252239, guid: fa3311ec443dced4799bbadcb4793639,
         type: 3}

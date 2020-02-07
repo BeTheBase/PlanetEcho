@@ -12,8 +12,9 @@ namespace Ruben
             {
                 if (other.gameObject.HasComponent<SuckMachine>())
                 {
-                    Destroy(gameObject);
+                    AudioManager.Instance.Play("Plop", transform.position);
                     PlanetLily.Instance.AddDestroyedWooshie();
+                    Destroy(gameObject);
                 }
             }
         }
