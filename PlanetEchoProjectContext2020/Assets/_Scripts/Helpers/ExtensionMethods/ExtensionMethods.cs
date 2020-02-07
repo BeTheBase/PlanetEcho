@@ -18,10 +18,10 @@ public static class ExtensionMethods
         return ActivateCoroutineLerpTransformPositions(currentTransform, owner, targetPosition, speed);
     }
 
-    public static Vector3 LerpVector(this Vector3 currentVector, MonoBehaviour owner, Vector3 targetPosition, float speed)
-    {
-
-    }
+    //public static Vector3 LerpVector(this Vector3 currentVector, MonoBehaviour owner, Vector3 targetPosition, float speed)
+    //{
+    //    
+    //}
 
     public static List<T> ToList<T>(this T[] array) where T : class
     {
