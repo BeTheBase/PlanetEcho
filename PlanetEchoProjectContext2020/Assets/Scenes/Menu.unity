@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 0.7
   OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -285,6 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 1.5
   OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -405,6 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 1.5
   OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -525,6 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 1.5
   OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -644,6 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 0.7
   OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -1010,6 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eef06a0225212a468bb6a8add7ad331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HoverSize: 0.7
   OnClick:
     m_PersistentCalls:
       m_Calls: []
