@@ -208,7 +208,7 @@ namespace Ruben
 
         #region CollisionHandling
 
-        private void OnCollisionEnter(Collision collision)
+        private void OnCollisionStay(Collision collision)
         {
             List<ContactPoint> contactPoints = new List<ContactPoint>();
             collision.GetContacts(contactPoints);
