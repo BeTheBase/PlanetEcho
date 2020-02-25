@@ -457,11 +457,11 @@ MonoBehaviour:
   components:
   - {fileID: -4675271958669273393}
   - {fileID: -4732925807579646586}
-  - {fileID: 7393558123271383676}
   - {fileID: -3608848530955086973}
   - {fileID: -3907858739923317046}
   - {fileID: -2749329741600702575}
---- !u!114 &7393558123271383676
+  - {fileID: 2460668916256127480}
+--- !u!114 &2460668916256127480
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -477,15 +477,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.8
+    m_Value: 0.6
     min: 0
     max: 1
   response:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.8
     min: 0
     max: 1
   texture:

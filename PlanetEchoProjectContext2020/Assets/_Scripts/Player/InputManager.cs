@@ -4,17 +4,7 @@ using UnityEngine;
 
 namespace Ruben
 {
-    public delegate void OnJumpKeyDown();
-    public delegate void OnJumpKeyUp();
-
-    public delegate void OnRunKeyDown();
-    public delegate void OnRunKeyUp();
-
-    public delegate void OnRmouseDown();
-    public delegate void OnRmouseUp();
-    public delegate void OnLmouseDown();
-    public delegate void OnLmouseUp();
-
+    public delegate void OnNoteBookKey();
 
     public class InputManager : MonoBehaviour
     {
@@ -22,7 +12,7 @@ namespace Ruben
         [SerializeField] private string horizontalAxis;
         [SerializeField] private string verticalAxis;
         [SerializeField] private KeyCode rMouseButton, lMouseButton;
-        public KeyCode jumpKey, crouchKey, runKey;
+        public KeyCode jumpKey, crouchKey, runKey, notebookKey;
 
         public float hInput { get; private set; }
         public float vInput { get; private set; }
@@ -31,6 +21,8 @@ namespace Ruben
         public bool runKeyPressed { get; private set; } = false;
         public bool leftMouseButtonPressed { get; private set; } = false;
         public bool rightMouseButtonPressed { get; private set; } = false;
+
+        public OnNoteBookKey onNoteBookKeyDel;
 
         //Singleton
         private static InputManager instance;
@@ -65,6 +57,11 @@ namespace Ruben
             runKeyPressed = Input.GetKey(runKey);
             rightMouseButtonPressed = Input.GetKey(rMouseButton);
             leftMouseButtonPressed = Input.GetKey(lMouseButton);
+
+            if (Input.GetKeyDown(notebookKey))
+            {
+                onNoteBookKeyDel?.Invoke();
+            }
         }
     }
 }
