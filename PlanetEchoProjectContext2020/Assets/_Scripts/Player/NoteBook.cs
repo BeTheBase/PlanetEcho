@@ -10,6 +10,7 @@ namespace Ruben
         [SerializeField] private float openingSpeed;
         [SerializeField] private Vector3 openedPosition, closedPosition;
         [SerializeField] private TextMeshProUGUI inputText;
+        [SerializeField] private TMP_InputField inputField;
         private RectTransform rectTransform;
 
         private void Awake()
@@ -18,7 +19,7 @@ namespace Ruben
             inputText.enableWordWrapping = true;
         }
 
-        private void Start()
+        private void OnEnable()
         {
             InputManager.Instance.onNoteBookKeyDel += OpenNoteBook;
         }
@@ -36,6 +37,7 @@ namespace Ruben
 
             StopAllCoroutines();
 
+            inputField.ActivateInputField();
             MovementController.Instance.enabled = false;
             rectTransform.LerpRectTransform(this, openedPosition, openingSpeed);
         }
@@ -47,8 +49,15 @@ namespace Ruben
 
             StopAllCoroutines();
 
+            //inputField.DeactivateInputField();
+            gameObject.SetActive(false);
+            gameObject.SetActive(true);
             MovementController.Instance.enabled = true;
             rectTransform.LerpRectTransform(this, closedPosition, openingSpeed);
+            if (inputText.text.EndsWith("q") || inputText.text.EndsWith("q"))
+            {
+                inputText.text.Remove(inputText.text.LastIndexOf('q'));
+            }
         }
     }
 }
