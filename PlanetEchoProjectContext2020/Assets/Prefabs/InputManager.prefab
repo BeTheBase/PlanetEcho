@@ -50,3 +50,4 @@ MonoBehaviour:
   jumpKey: 32
   crouchKey: 306
   runKey: 304
+  notebookKey: 113

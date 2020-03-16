@@ -30,6 +30,7 @@ namespace Ruben
 
         private void OnEnable()
         {
+            Cursor.lockState = CursorLockMode.Locked;
             MovementController mCont = MovementController.Instance;
 
             mCont.StartCrouchDel += SetView;
@@ -46,13 +47,9 @@ namespace Ruben
             }
         }
 
-        private void Awake()
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-
         void Update()
         {
+
             //Horizontal Rotation
             transform.Rotate(0, Input.GetAxis("Mouse X") * xSensitivity, 0);
 
@@ -60,6 +57,7 @@ namespace Ruben
             yRotation += -(Input.GetAxis("Mouse Y") * ySensitivity);
             yRotation = Mathf.Clamp(yRotation, minYRot, maxYRot);
             cameraTransform.localEulerAngles = new Vector3(yRotation, 0, cameraTransform.localEulerAngles.z);
+            
         }
 
         private void SetView(ViewType viewType = ViewType.Normal)
