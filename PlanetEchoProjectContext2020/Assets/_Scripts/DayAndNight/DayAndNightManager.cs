@@ -50,7 +50,6 @@ public class DayAndNightManager : MonoBehaviour
         if(RenderSettings.sun != null)
         {
             DirectionalLight = RenderSettings.sun;
-
         }
         else
         {
