@@ -30,11 +30,11 @@ namespace Ruben
 
         private void OnEnable()
         {
+            Cursor.lockState = CursorLockMode.Locked;
             MovementController mCont = MovementController.Instance;
 
             mCont.StartCrouchDel += SetView;
             mCont.ExitCrouchDel += SetView;
-            InputManager.Instance.onNoteBookKeyDel += SwapCursor;
         }
 
         private void OnDisable()
@@ -44,32 +44,20 @@ namespace Ruben
             {
                 mCont.StartCrouchDel -= SetView;
                 mCont.ExitCrouchDel -= SetView;
-                InputManager.Instance.onNoteBookKeyDel -= SwapCursor;
             }
-        }
-
-        private void Awake()
-        {
-            Cursor.lockState = CursorLockMode.Locked;
         }
 
         void Update()
         {
-            if (Cursor.lockState == CursorLockMode.Locked)
-            {
-                //Horizontal Rotation
-                transform.Rotate(0, Input.GetAxis("Mouse X") * xSensitivity, 0);
 
-                //Vertical Rotation
-                yRotation += -(Input.GetAxis("Mouse Y") * ySensitivity);
-                yRotation = Mathf.Clamp(yRotation, minYRot, maxYRot);
-                cameraTransform.localEulerAngles = new Vector3(yRotation, 0, cameraTransform.localEulerAngles.z);
-            }
-        }
+            //Horizontal Rotation
+            transform.Rotate(0, Input.GetAxis("Mouse X") * xSensitivity, 0);
 
-        private void SwapCursor()
-        {
-            Cursor.lockState = (Cursor.lockState == CursorLockMode.Locked) ? CursorLockMode.None : CursorLockMode.Locked;
+            //Vertical Rotation
+            yRotation += -(Input.GetAxis("Mouse Y") * ySensitivity);
+            yRotation = Mathf.Clamp(yRotation, minYRot, maxYRot);
+            cameraTransform.localEulerAngles = new Vector3(yRotation, 0, cameraTransform.localEulerAngles.z);
+            
         }
 
         private void SetView(ViewType viewType = ViewType.Normal)
