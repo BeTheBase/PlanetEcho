@@ -20,10 +20,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Default
+  m_Name: Emmissive
   m_Shader: {fileID: 4800000, guid: 57df2f623bf75924299f63bd6d09fefe, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
@@ -187,7 +187,7 @@ Material:
     - _DstBlend: 0
     - _EmissiveColorMode: 1
     - _EmissiveExposureWeight: 1
-    - _EmissiveIntensity: 1
+    - _EmissiveIntensity: 5.12
     - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
@@ -255,7 +255,7 @@ Material:
     - _UVBase: 0
     - _UVDetail: 0
     - _UVEmissive: 0
-    - _UseEmissiveIntensity: 0
+    - _UseEmissiveIntensity: 1
     - _UseShadowThreshold: 0
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
@@ -263,18 +263,18 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - Color_62F24D98: {r: 0.2924528, g: 0.0758722, b: 0.0758722, a: 1}
+    - Color_62F24D98: {r: 1, g: 0.69540054, b: 0, a: 1}
     - Color_7657C1FD: {r: 0, g: 0, b: 0, a: 0}
     - Color_76F972A0: {r: 0, g: 0, b: 0, a: 0}
     - Color_B0CDD922: {r: 0, g: 0, b: 0, a: 0}
-    - _BaseColor: {r: 0.41509432, g: 0.07675293, b: 0.029369876, a: 1}
+    - _BaseColor: {r: 1, g: 0.6103101, b: 0, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0.4150943, g: 0.07675291, b: 0.029369874, a: 1}
+    - _Color: {r: 1, g: 0.6103101, b: 0, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 4.4437733, g: 2.982969, b: 0.44018504, a: 5.12}
+    - _EmissiveColorLDR: {r: 0.8679245, g: 0.58261114, b: 0.08597365, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
