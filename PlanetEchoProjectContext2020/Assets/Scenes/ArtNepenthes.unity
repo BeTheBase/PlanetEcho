@@ -843,6 +843,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Town
       objectReference: {fileID: 0}
+    - target: {fileID: 3296905290737957451, guid: cc1bc19f068fadc46943fa9aad2331bb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 490c0ee79b4b02f41bcc1a913401d669, type: 2}
+    - target: {fileID: 8354933269470100160, guid: cc1bc19f068fadc46943fa9aad2331bb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 490c0ee79b4b02f41bcc1a913401d669, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc1bc19f068fadc46943fa9aad2331bb, type: 3}
 --- !u!1001 &2630976049390517401
