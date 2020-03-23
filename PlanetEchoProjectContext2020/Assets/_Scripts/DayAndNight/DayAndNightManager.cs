@@ -11,10 +11,17 @@ public class DayAndNightManager : MonoBehaviour
     private LighingPreset Preset;
     [SerializeField, Range(0, 24)]
     private float DayTime;
+    [SerializeField]
+    private bool updateTime = false;
+
+    private void Start()
+    {
+        UpdateLighting(DayTime / 24f);
+    }
 
     private void Update()
     {
-        if (Preset == null)
+        if (Preset == null || !updateTime)
             return;
 
         if(Application.isPlaying)
