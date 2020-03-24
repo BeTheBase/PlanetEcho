@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: StadhuisDeur
   m_Shader: {fileID: 4800000, guid: 57df2f623bf75924299f63bd6d09fefe, type: 3}
-  m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -264,9 +264,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_62F24D98: {r: 1, g: 1, b: 1, a: 1}
-    - Color_7657C1FD: {r: 0, g: 0, b: 0, a: 0}
-    - Color_76F972A0: {r: 0, g: 0, b: 0, a: 0}
-    - Color_B0CDD922: {r: 0, g: 0, b: 0, a: 0}
+    - Color_7657C1FD: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
+    - Color_76F972A0: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
+    - Color_B0CDD922: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
