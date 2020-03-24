@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 8581884572908896172}
   - component: {fileID: 8581884572908896174}
   - component: {fileID: 8581884572908896177}
+  - component: {fileID: 386717190}
+  - component: {fileID: 8341346604004318329}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -57,10 +59,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0566d2e07c0e0c438dcc5e0322a38a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bike: {fileID: 0}
-  loadingTime: 3
-  loadScene: 0
-  loadingText: {fileID: 0}
 --- !u!114 &8581884572908896177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,3 +108,27 @@ MonoBehaviour:
       DialogueText: Sisi
       DialogueAudio: {fileID: 0}
     DialogueSequenceID: 0
+--- !u!114 &386717190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5582aa7fc3e1cab409b49e6394f0ce1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8341346604004318329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8581884572908896173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5582aa7fc3e1cab409b49e6394f0ce1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

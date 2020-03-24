@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PreceduralSkybox
   m_Shader: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY _TERRAIN_INSTANCED_PERPIXEL_NORMAL
+  m_ShaderKeywords: _SUNDISK_SIMPLE _TERRAIN_INSTANCED_PERPIXEL_NORMAL
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -270,7 +270,7 @@ Material:
     - _StencilWriteMaskGBuffer: 51
     - _StencilWriteMaskMV: 176
     - _SubsurfaceMask: 1
-    - _SunDisk: 2
+    - _SunDisk: 1
     - _SunSize: 0.23
     - _SunSizeConvergence: 5.5
     - _SupportDecals: 1

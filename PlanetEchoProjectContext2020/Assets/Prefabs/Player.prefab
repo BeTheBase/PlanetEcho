@@ -130,7 +130,7 @@ MonoBehaviour:
   crouchSpeed: 6
   airSpeed: 10
   runSpeedAmplifier: 1.5
-  groundJumpVel: 20
+  groundJumpVel: 7
   crouchHeight: 1.3
   gravityAmplifier: 1.2
   groundCollisionAngle: 15
@@ -157,8 +157,10 @@ MonoBehaviour:
     rotation: {x: 0, y: 0, z: 0}
   xSensitivity: 15
   ySensitivity: 15
-  maxYRot: 60
   minYRot: -60
+  maxYRot: 60
+  minXRot: 0
+  maxXRot: 360
   cameraTransform: {fileID: 8164467651303565604}
   rb: {fileID: 8164467649932418176}
 --- !u!1 &8164467651303565607

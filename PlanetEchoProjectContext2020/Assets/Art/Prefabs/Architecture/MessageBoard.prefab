@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 76429268048854438}
+  - component: {fileID: 5521866073914006029}
   m_Layer: 0
   m_Name: MessageBoard
   m_TagString: Untagged
@@ -34,6 +35,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5521866073914006029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643014244594412255}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.854826, y: 3.160984, z: 0.3227601}
+  m_Center: {x: 0.07556653, y: 1.080492, z: 0.09355998}
 --- !u!1 &1273473542678069338
 GameObject:
   m_ObjectHideFlags: 0
