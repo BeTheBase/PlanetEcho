@@ -208,6 +208,7 @@ namespace PixelCrushers.DialogueSystem
             int numTracked = 0;
             QuestState flags = (showActiveQuests ? QuestState.Active : 0) |
                 (showCompletedQuests ? QuestState.Success | QuestState.Failure : 0);
+
             foreach (string quest in QuestLog.GetAllQuests(flags))
             {
                 if (QuestLog.IsQuestTrackingEnabled(quest))

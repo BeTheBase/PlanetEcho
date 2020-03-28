@@ -7,6 +7,7 @@ public class DayAndNightManager : MonoBehaviour
 {
     [SerializeField]
     private Light DirectionalLight;
+    private Light darkLights;
     [SerializeField]
     private LighingPreset Preset;
     [SerializeField, Range(0, 24)]

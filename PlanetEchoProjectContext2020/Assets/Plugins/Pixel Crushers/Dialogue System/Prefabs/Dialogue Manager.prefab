@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 11471062}
   - component: {fileID: 11424616}
   - component: {fileID: 1004927348}
+  - component: {fileID: 1912261472780219436}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -309,6 +310,18 @@ MonoBehaviour:
   key: 113
   buttonName: 
   questLogWindow: {fileID: 0}
+--- !u!114 &1912261472780219436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5582aa7fc3e1cab409b49e6394f0ce1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6010724
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,7 +1540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 290, y: -200}
+  m_AnchoredPosition: {x: 305, y: -372}
   m_SizeDelta: {x: 120, y: 48}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &922761977

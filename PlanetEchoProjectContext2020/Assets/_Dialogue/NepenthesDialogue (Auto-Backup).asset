@@ -214,7 +214,67 @@ MonoBehaviour:
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
     alternatePortraits: []
-  items: []
+  items:
+  - id: 1
+    fields:
+    - title: Name
+      value: Ga naar het stadhuis
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 2
+    fields:
+    - title: Name
+      value: Doe een salto!
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
   locations:
   - id: 1
     fields:
@@ -234,7 +294,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Name
-      value: Alert
+      value: StadhuisAlert
       type: 0
       typeString: 
     - title: Initial Value
@@ -242,7 +302,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
-      value: 
+      value: Ga naar het stadhuis vanavond!
       type: 0
       typeString: 
   conversations:
@@ -1478,14 +1538,17 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'SetQuestState("Ga naar het stadhuis", "active");
+
+        Variable["StadhuisAlert"]
+        = "Ga naar het stadhuis vanavond!"'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 169
-        y: 313
+        x: 170
+        y: 314
         width: 160
         height: 30
     - id: 5
@@ -14818,8 +14881,8 @@ MonoBehaviour:
         y: 544.52423
         width: 160
         height: 30
-    canvasScrollPosition: {x: 15.446793, y: 27.446774}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.7300002
   - id: 18
     fields:
     - title: Title
@@ -15468,7 +15531,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Wanna buy some stuff?
+        value: Wil je wat kopen?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15508,8 +15571,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 145
-        y: 127
+        x: 242.46832
+        y: 162.44302
         width: 160
         height: 30
     - id: 2
@@ -15539,7 +15602,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What kinda stuff you mean?
+        value: Wat kopen?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15610,8 +15673,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "You know, some of them MeatBreezies. \nJust for you, today I have
-          the right price. "
+        value: 'Je weet wel, wat van die MeatBreezies.
+
+          Ik kan er een mooi
+          prijsje maken voor jou.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15688,7 +15753,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oeh I would like some!
+        value: Ja, ik wil er wel een paar!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15759,7 +15824,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: No thanks
+        value: Nee, dankje...
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15824,7 +15889,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Here, thats 3000 NP
+        value: 'Hier, dat is dan 3000 '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15871,7 +15936,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 159
-        y: 490
+        y: 491.26587
         width: 160
         height: 30
     - id: 7
@@ -15901,7 +15966,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oeh, I don't have any on me, I'l come back later.
+        value: Owh, ik heb nu niks bij me.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15966,7 +16031,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: WOW, so much? Sorry bye.
+        value: Klinkt als oplichterij.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
