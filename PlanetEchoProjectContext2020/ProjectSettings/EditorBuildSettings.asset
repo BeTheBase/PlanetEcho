@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 7a7bb467c900f3f4ea4be15682d80b66
+  - enabled: 1
     path: Assets/Scenes/RubenNepenthesDAG1.unity
     guid: 5ccc9bf649d7f534cb7087cccf4acfaa
   - enabled: 1
