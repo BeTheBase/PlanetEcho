@@ -245,10 +245,18 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
   - id: 2
     fields:
     - title: Name
-      value: Doe een salto!
+      value: Praat met de slagerin
       type: 0
       typeString: 
     - title: Pictures
@@ -275,6 +283,144 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 3
+    fields:
+    - title: Name
+      value: Praat met de dokter
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 4
+    fields:
+    - title: Name
+      value: Doe onderzoek naar de burgemeester
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: Ga naar het stadhuis.
+      type: 0
+      typeString: 
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: 
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: 
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+  - id: 5
+    fields:
+    - title: Name
+      value: Praat met de gasten van het diner
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Success Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Failure Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: State
+      value: unassigned
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Is Item
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Trackable
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Track
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Met personen gepraat
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry Count
+      value: 1
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Entry 1 State
+      value: active
+      type: 0
+      typeString: CustomFieldType_QuestState
+    - title: Entry 1
+      value: Met [var=Personen gepraat] personen gepraat
+      type: 0
+      typeString: CustomFieldType_Text
   locations:
   - id: 1
     fields:
@@ -294,7 +440,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Name
-      value: StadhuisAlert
+      value: Alert
       type: 0
       typeString: 
     - title: Initial Value
@@ -302,7 +448,21 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
-      value: Ga naar het stadhuis vanavond!
+      value: 
+      type: 0
+      typeString: 
+  - id: 2
+    fields:
+    - title: Name
+      value: 'Personen gepraat '
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
       type: 0
       typeString: 
   conversations:
@@ -463,7 +623,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Camere(Closeup);
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -612,7 +772,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Camere(Closeup);
+        value: 
         type: 0
         typeString: 
       conversationID: 1
@@ -1118,7 +1278,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Camere(Closeup);
+        value: 
         type: 0
         typeString: 
       - title: Response Menu Sequence
@@ -1165,7 +1325,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 3
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -1540,15 +1700,15 @@ MonoBehaviour:
       conditionsString: 
       userScript: 'SetQuestState("Ga naar het stadhuis", "active");
 
-        Variable["StadhuisAlert"]
-        = "Ga naar het stadhuis vanavond!"'
+        Variable["Alert"]
+        = "Nieuwe taak: Ga vanavond naar het stadhuis!"'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 170
-        y: 314
+        y: 315
         width: 160
         height: 30
     - id: 5
@@ -1616,8 +1776,8 @@ MonoBehaviour:
         y: 363
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 38.92825, y: 48.488266}
+    canvasZoom: 0.97
   - id: 3
     fields:
     - title: Title
@@ -1637,7 +1797,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 4
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -1679,7 +1839,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2685,7 +2845,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 6
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -2727,7 +2887,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2794,7 +2954,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -2875,7 +3035,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -2946,7 +3106,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3013,7 +3173,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3095,7 +3255,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3160,7 +3320,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3221,7 +3381,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3297,7 +3457,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3364,7 +3524,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3439,7 +3599,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3507,7 +3667,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3589,7 +3749,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3660,7 +3820,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -3727,7 +3887,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3792,7 +3952,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -3842,8 +4002,8 @@ MonoBehaviour:
         y: 470
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1, y: 103}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 31.046728, y: 117.78156}
+    canvasZoom: 1.1199999
   - id: 5
     fields:
     - title: Title
@@ -6148,8 +6308,8 @@ MonoBehaviour:
         y: 320
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 23.108976, y: 20.643606}
+    canvasZoom: 0.84999996
   - id: 7
     fields:
     - title: Title
@@ -6169,7 +6329,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 3
+      value: 2
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -6331,7 +6491,8 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Met_personen_gepraat"] = Variable["Met_personen_gepraat"]
+        + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9424,7 +9585,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 6
+      value: 5
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -10180,7 +10341,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 6
+      value: 3
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -10647,7 +10808,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 7
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -10689,7 +10850,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 7
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -12003,7 +12164,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -12045,7 +12206,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -12183,7 +12344,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -12225,7 +12386,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -12648,7 +12809,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -12690,7 +12851,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13183,7 +13344,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -13225,7 +13386,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13292,7 +13453,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -13304,7 +13465,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Blurb... blurb, HI There!
+        value: Blurb... blurb, hallo!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13351,7 +13512,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 179
-        y: 148
+        y: 149.06384
         width: 160
         height: 30
     - id: 2
@@ -13373,7 +13534,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13381,7 +13542,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hello?
+        value: Hallo?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13444,7 +13605,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13452,7 +13613,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Bye.
+        value: DOEI
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13487,7 +13648,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 305
-        y: 277
+        y: 278.06384
         width: 160
         height: 30
     - id: 4
@@ -13505,7 +13666,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -13517,10 +13678,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'I like blurb.... your style!
+        value: 'ik vind blurb... je stijl leuk!
 
-          Wanna Know what my style
-          is?'
+          Wil je mijn style weten?'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13589,7 +13749,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13597,7 +13757,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Sure, tell me.
+        value: Is goed, vertel maar.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13660,7 +13820,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13668,7 +13828,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Don't care, bye
+        value: Nope.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13721,7 +13881,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -13733,8 +13893,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I blurb.... blurb.... blurb eat ALOT and my golden rule is, where
+        value: 'I blurb.... blurb.... blurb eat ALOT and my golden rule is, where
           there is meat there is SBB.... blurb
+
+          Ik blurb....blurb eet VEEL
+          en mijn gouden regel blurb is, wanneer er vlees is blurb dan SBBB... blurb'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13781,7 +13944,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 122
-        y: 531
+        y: 532.13635
         width: 160
         height: 30
     - id: 8
@@ -13803,7 +13966,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13811,7 +13974,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What's SBB?
+        value: What's SBBB?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13851,7 +14014,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 80
+        x: 73.67088
         y: 603
         width: 160
         height: 30
@@ -13870,7 +14033,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -13882,7 +14045,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Ahhh you''re knew here aye? '
+        value: Ahhh, je bent zeker nieuw hier?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -13951,7 +14114,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -13959,7 +14122,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Yes, I just arived
+        value: Ja, ik ben net aangekomen.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14022,7 +14185,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14030,7 +14193,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Tell me already man, I don't have all day.
+        value: Vertel het nou maar, ik heb neit de hele dag!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14089,7 +14252,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14101,7 +14264,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Spicy Buffalo Booze
+        value: Spicy Beef Buffalo burb... Booze
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14136,7 +14299,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 250.55441
-        y: 849.26624
+        y: 850.53204
         width: 160
         height: 30
     - id: 13
@@ -14154,7 +14317,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14166,7 +14329,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Ah, so, where do you sleep then? '
+        value: Ah, waar ga je overnachten?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14196,12 +14359,6 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 13
         destinationConversationID: 16
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 13
-        destinationConversationID: 16
         destinationDialogueID: 15
         isConnector: 0
         priority: 2
@@ -14214,71 +14371,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 68.84865
         y: 848.20483
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: Hotel
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 16
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 36.93376
-        y: 968.41754
         width: 160
         height: 30
     - id: 15
@@ -14300,7 +14392,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14308,7 +14400,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Camping
+        value: In me tentje.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14342,12 +14434,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 247.57208
-        y: 964.1623
+        x: 109.00072
+        y: 981.3051
         width: 160
         height: 30
-    canvasScrollPosition: {x: 2.1276855, y: 30.983398}
-    canvasZoom: 0.94000006
+    canvasScrollPosition: {x: 0, y: 506.02322}
+    canvasZoom: 0.7000003
   - id: 17
     fields:
     - title: Title
@@ -14367,7 +14459,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -14409,7 +14501,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14476,7 +14568,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14488,7 +14580,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Supp Dude...
+        value: Sup!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14547,7 +14639,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14559,7 +14651,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Wanna know my secret?
+        value: Wil je mijn geheim weten?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14622,7 +14714,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14689,7 +14781,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14701,7 +14793,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: I'l never tell y'all, only if you buy me some of them greenies.
+        value: Ik vertel het alleen als je me wat groentjes koopt.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14764,7 +14856,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -14772,7 +14864,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What greenies?
+        value: Groentjes?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -14831,7 +14923,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -14881,8 +14973,8 @@ MonoBehaviour:
         y: 544.52423
         width: 160
         height: 30
-    canvasScrollPosition: {x: 15.446793, y: 27.446774}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 55.37938, y: 30.018248}
+    canvasZoom: 0.8500001
   - id: 18
     fields:
     - title: Title
@@ -14902,7 +14994,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -14944,7 +15036,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -15011,7 +15103,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -15023,12 +15115,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Hmmmmmm.....mhmmmmmm......Ahaaaa,
-
-          Jaja daar gaan we weer.
-
-          Hmmmmmm....
-          jhmmmmjhmmmm aha'
+        value: Hallo
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15087,7 +15174,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -15129,7 +15216,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -15196,19 +15283,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What day is it?....
+        value: Welke dag is het?....
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15271,7 +15358,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -15338,20 +15425,20 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Thanks! I remember them old days, when I remembered the days. Those
-          were the days.
+        value: Ah dankjewel! ik herinner me die oude dagen, dat ik de dagen kon herinneren.
+          Dat waren nog is de dagen.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15385,8 +15472,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 236
-        y: 399
+        x: 47
+        y: 365
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -15410,7 +15497,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -15452,7 +15539,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -15519,19 +15606,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Wanna buy some stuff?
+        value: Wil je wat kopen?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15571,8 +15658,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 145
-        y: 127
+        x: 242.46832
+        y: 162.44302
         width: 160
         height: 30
     - id: 2
@@ -15591,18 +15678,18 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What kinda stuff you mean?
+        value: Wat kopen?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15661,20 +15748,22 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "You know, some of them MeatBreezies. \nJust for you, today I have
-          the right price. "
+        value: 'Je weet wel, wat van die MeatBreezies.
+
+          Ik kan er een mooi
+          prijsje maken voor jou.'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15740,18 +15829,18 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oeh I would like some!
+        value: Ja, ik wil er wel een paar!
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15811,18 +15900,18 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: No thanks
+        value: Nee, dankje...
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15875,19 +15964,19 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Here, thats 3000 NP
+        value: 'Hier, dat is dan 3000 '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -15934,7 +16023,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 159
-        y: 490
+        y: 491.26587
         width: 160
         height: 30
     - id: 7
@@ -15953,18 +16042,18 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Oeh, I don't have any on me, I'l come back later.
+        value: Owh, ik heb nu niks bij me.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16018,18 +16107,18 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Actor
         value: 1
-        type: 5
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
-        type: 5
+        value: 9
+        type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
         value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: WOW, so much? Sorry bye.
+        value: Klinkt als oplichterij.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16084,11 +16173,11 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Actor
-      value: 2
+      value: 1
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 1
+      value: 9
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -16126,11 +16215,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -16197,11 +16286,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -16268,11 +16357,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -16343,7 +16432,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -16351,7 +16440,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What are you singing?
+        value: Wat zit je te zingen?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16391,7 +16480,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 115
+        x: 117
         y: 314
         width: 160
         height: 30
@@ -16410,11 +16499,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 9
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -16422,7 +16511,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: None of your business
+        value: Gaat je niks aan
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical

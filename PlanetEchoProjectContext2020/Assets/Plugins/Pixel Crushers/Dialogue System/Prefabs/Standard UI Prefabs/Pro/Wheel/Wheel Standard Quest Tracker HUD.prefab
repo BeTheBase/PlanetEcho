@@ -439,11 +439,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefsToggleKey: QuestTracker
   container: {fileID: 22471528}
-  showContainerIfEmpty: 1
+  showContainerIfEmpty: 0
   questTrackTemplate: {fileID: 11404086}
   showActiveQuests: 1
-  showCompletedQuests: 1
-  showCompletedEntryText: 1
+  showCompletedQuests: 0
+  showCompletedEntryText: 0
   questDescriptionSource: 0
   visibleOnStart: 1
 --- !u!1 &184080

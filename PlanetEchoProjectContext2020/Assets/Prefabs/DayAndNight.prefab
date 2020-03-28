@@ -47,6 +47,7 @@ MonoBehaviour:
   DirectionalLight: {fileID: 0}
   Preset: {fileID: 11400000, guid: f92da5ecf37ac544fb13272224230b41, type: 2}
   DayTime: 8.5
+  updateTime: 0
 --- !u!114 &3819005062162016999
 MonoBehaviour:
   m_ObjectHideFlags: 0

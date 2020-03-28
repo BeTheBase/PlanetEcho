@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8153323203229082239}
   - component: {fileID: 1921847024513345344}
   - component: {fileID: 4998604545557158741}
+  - component: {fileID: 3885430738542772245}
   m_Layer: 0
   m_Name: Fontein1
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3885430738542772245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2196762753729781640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2117276, y: 6.353092, z: 6.1848264}
+  m_Center: {x: 0, y: 2.6015377, z: 0}
 --- !u!1 &4548497439531869660
 GameObject:
   m_ObjectHideFlags: 0
