@@ -12,7 +12,7 @@ namespace Ruben
         [SerializeField] private string horizontalAxis;
         [SerializeField] private string verticalAxis;
         [SerializeField] private KeyCode rMouseButton, lMouseButton;
-        public KeyCode jumpKey, crouchKey, runKey, notebookKey;
+        public KeyCode jumpKey, crouchKey, runKey;
 
         public float hInput { get; private set; }
         public float vInput { get; private set; }
@@ -21,8 +21,6 @@ namespace Ruben
         public bool runKeyPressed { get; private set; } = false;
         public bool leftMouseButtonPressed { get; private set; } = false;
         public bool rightMouseButtonPressed { get; private set; } = false;
-
-        public OnNoteBookKey onNoteBookKeyDel;
 
         //Singleton
         private static InputManager instance;
@@ -57,11 +55,6 @@ namespace Ruben
             runKeyPressed = Input.GetKey(runKey);
             rightMouseButtonPressed = Input.GetKey(rMouseButton);
             leftMouseButtonPressed = Input.GetKey(lMouseButton);
-
-            if (Input.GetKeyDown(notebookKey))
-            {
-                onNoteBookKeyDel?.Invoke();
-            }
         }
     }
 }
