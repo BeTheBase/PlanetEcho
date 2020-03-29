@@ -367,9 +367,7 @@ MonoBehaviour:
   trigger: 32
   condition:
     luaConditions: []
-    questConditions:
-    - questName: Praat met de gasten van het diner
-      questState: 2
+    questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
     luaWizardIndex: -1
@@ -565,14 +563,14 @@ MonoBehaviour:
     luaConditions: []
     questConditions:
     - questName: Praat met de gasten van het diner
-      questState: 4
+      questState: 6
     acceptedTags: []
     acceptedGameObjects: []
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName: 
-  questState: 0
+  questName: Praat met de gasten van het diner
+  questState: 4
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
@@ -931,9 +929,7 @@ MonoBehaviour:
   trigger: 32
   condition:
     luaConditions: []
-    questConditions:
-    - questName: Praat met de gasten van het diner
-      questState: 2
+    questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
     luaWizardIndex: -1
@@ -1372,9 +1368,7 @@ MonoBehaviour:
   trigger: 32
   condition:
     luaConditions: []
-    questConditions:
-    - questName: Praat met de gasten van het diner
-      questState: 2
+    questConditions: []
     acceptedTags: []
     acceptedGameObjects: []
     luaWizardIndex: -1

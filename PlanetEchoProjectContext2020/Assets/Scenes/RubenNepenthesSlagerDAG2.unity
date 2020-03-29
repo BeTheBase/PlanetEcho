@@ -219,6 +219,18 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8341346604004318329, guid: 272388aaa27da14488c804d771399ec0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 272388aaa27da14488c804d771399ec0, type: 3}
+--- !u!114 &386717189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8581884572908896174, guid: 272388aaa27da14488c804d771399ec0,
+    type: 3}
+  m_PrefabInstance: {fileID: 386717188}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0566d2e07c0e0c438dcc5e0322a38a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &400253928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -226,6 +238,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1869539631}
     m_Modifications:
+    - target: {fileID: -7358361078208676601, guid: 0802a68bdf2c90e4d83cfa48e4b86df9,
+        type: 3}
+      propertyPath: questName
+      value: Praat met de dokter
+      objectReference: {fileID: 0}
+    - target: {fileID: -7358361078208676601, guid: 0802a68bdf2c90e4d83cfa48e4b86df9,
+        type: 3}
+      propertyPath: questState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4824425976529114629, guid: 0802a68bdf2c90e4d83cfa48e4b86df9,
         type: 3}
       propertyPath: m_Name
@@ -336,8 +358,8 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName: 
-  questState: 0
+  questName: Praat met de slagerin
+  questState: 4
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
@@ -620,6 +642,157 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
+--- !u!1 &936557766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936557770}
+  - component: {fileID: 936557769}
+  - component: {fileID: 936557768}
+  - component: {fileID: 936557767}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936557767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936557766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 32
+  condition:
+    luaConditions: []
+    questConditions:
+    - questName: Praat met de slagerin
+      questState: 4
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: Praat met de dokter
+  questState: 2
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 0
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: 
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  exclusive: 0
+  skipIfNoValidEntries: 1
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 386717189}
+        m_MethodName: GoToLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: RubenNepenthesDAG2
+          m_BoolArgument: 0
+        m_CallState: 2
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: 1147c3be3f0c2c844beadee0b82ce7ad, type: 2}
+--- !u!114 &936557768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936557766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideName: 
+  overrideUseMessage: 
+  maxUseDistance: 5
+  events:
+    onSelect:
+      m_PersistentCalls:
+        m_Calls: []
+    onDeselect:
+      m_PersistentCalls:
+        m_Calls: []
+    onUse:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!65 &936557769
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936557766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &936557770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936557766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8219, y: 0.8344, z: 3.0568}
+  m_LocalScale: {x: 1.3997, y: 2.1055737, z: 0.3447541}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1003583692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,12 +1305,37 @@ PrefabInstance:
     - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.83
+      value: 1.607
       objectReference: {fileID: 0}
     - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.92
+      value: 1.921
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000029504295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691829457710345590, guid: fedea73cb8bf946429239f221e7feba0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180.00002
       objectReference: {fileID: 0}
     - target: {fileID: 5540390470035828698, guid: fedea73cb8bf946429239f221e7feba0,
         type: 3}

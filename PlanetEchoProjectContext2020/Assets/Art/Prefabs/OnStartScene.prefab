@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 4764957023360254754}
   - component: {fileID: 4764957023360254755}
   - component: {fileID: 4764957023360254759}
+  - component: {fileID: 2471939531110921250}
   m_Layer: 5
   m_Name: OnStartScene
   m_TagString: Untagged
@@ -253,11 +254,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!95 &4764957023360254759
 Animator:
   serializedVersion: 3
@@ -277,6 +278,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &2471939531110921250
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4764957023360254752}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4764957023997276580
 GameObject:
   m_ObjectHideFlags: 0

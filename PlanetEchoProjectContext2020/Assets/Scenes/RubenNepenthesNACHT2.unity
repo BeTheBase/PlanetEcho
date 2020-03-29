@@ -470,7 +470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 730807285}
   - component: {fileID: 730807286}
-  - component: {fileID: 730807289}
+  - component: {fileID: 730807287}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -505,7 +505,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &730807289
+--- !u!114 &730807287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,10 +514,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 730807284}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d9d7d7cc9f0a2449b2246f25799d2b6, type: 3}
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteract:
+  trigger: 32
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 0
+  barkConversation: 
+  barkText: 
+  barkTextSequence: 
+  barker: {fileID: 0}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: 
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  exclusive: 0
+  skipIfNoValidEntries: 1
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 386717189}
@@ -531,17 +579,10 @@ MonoBehaviour:
           m_StringArgument: RubenNepenthesDAG3
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: CompleteQuest
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GaNaarBed
-          m_BoolArgument: 0
-        m_CallState: 2
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: 1147c3be3f0c2c844beadee0b82ce7ad, type: 2}
 --- !u!1001 &1087522631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -874,17 +915,17 @@ PrefabInstance:
     - target: {fileID: 4764957024261015843, guid: 3db5fe172c3005444ad955911109425f,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 9
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4764957024261015843, guid: 3db5fe172c3005444ad955911109425f,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4764957024261015843, guid: 3db5fe172c3005444ad955911109425f,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4764957024261015843, guid: 3db5fe172c3005444ad955911109425f,
         type: 3}
@@ -899,7 +940,7 @@ PrefabInstance:
     - target: {fileID: 4764957024261015843, guid: 3db5fe172c3005444ad955911109425f,
         type: 3}
       propertyPath: m_text
-      value: Het diner
+      value: Er was een nacht
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db5fe172c3005444ad955911109425f, type: 3}
