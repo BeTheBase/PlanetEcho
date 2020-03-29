@@ -471,6 +471,7 @@ GameObject:
   - component: {fileID: 730807285}
   - component: {fileID: 730807286}
   - component: {fileID: 730807287}
+  - component: {fileID: 730807288}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -583,6 +584,31 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: 1147c3be3f0c2c844beadee0b82ce7ad, type: 2}
+--- !u!114 &730807288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730807284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideName: ' '
+  overrideUseMessage: Press E to leave
+  maxUseDistance: 5
+  events:
+    onSelect:
+      m_PersistentCalls:
+        m_Calls: []
+    onDeselect:
+      m_PersistentCalls:
+        m_Calls: []
+    onUse:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1087522631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1010,7 +1036,7 @@ PrefabInstance:
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.01714696
+      value: -0.9998531
       objectReference: {fileID: 0}
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
@@ -1020,7 +1046,7 @@ PrefabInstance:
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.999853
+      value: -0.017144127
       objectReference: {fileID: 0}
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
@@ -1035,7 +1061,7 @@ PrefabInstance:
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.9650002
+      value: -181.965
       objectReference: {fileID: 0}
     - target: {fileID: 8545568063437678165, guid: 412c0d1d1eef59e4ab35aa2534c6bfe6,
         type: 3}
@@ -1077,8 +1103,8 @@ MonoBehaviour:
     luaWizardIndex: -1
     lastEvaluationValue: 0
   setQuestState: 1
-  questName: 
-  questState: 0
+  questName: Doe onderzoek naar de burgemeester
+  questState: 4
   setQuestEntryState: 0
   questEntryNumber: 1
   questEntryState: 0
